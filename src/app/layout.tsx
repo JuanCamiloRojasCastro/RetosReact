@@ -1,4 +1,5 @@
-import './globals.css'
+import Navbar from './components/Molecules/Navbar/navbar'
+import './globals.scss'
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +13,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+        <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"/>
+        </head>
+        <body>
+            <Navbar/>
+            {children}
+        </body>
     </html>
   )
 }

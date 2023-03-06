@@ -1,0 +1,13 @@
+.nav_button {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.selected {
+    border-bottom: solid 2px rgb(102, 102, 102);
+    border-radius: 1px;
+}
